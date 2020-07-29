@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import NavBar from '../../commponent/navBar';
 import Hspace from '../../commponent/Hspace';
-import { Button } from 'antd';
+import { Button, DatePicker, List } from 'antd-mobile';
 export default class componentName extends Component {
+    state = {
+        date: new Date()
+    }
     render() {
         return (
             <div>
@@ -25,7 +28,18 @@ export default class componentName extends Component {
                     menu={true}
                 />
                 <Hspace />
-                <Button type='primary' disabled={false}>确认12312312312</Button>
+                <Button type='primary' disabled={false}>确认</Button>
+                <Hspace number='100' />
+               <DatePicker
+                    mode="date"
+                    title="Select Date"
+                    extra="Optional"
+                    value={this.state.date}
+                    onChange={date => this.setState({ date })}
+                >
+                    <List.Item arrow="horizontal">Date</List.Item>
+                </DatePicker>
+                123
             </div>
         )
     }
