@@ -7,8 +7,8 @@
             "import",
             {
                 "libraryName": "antd-mobile",
-                "libraryDirectory": "lib", // es es6 lib es5
-                "style": "css" // `style: true` 会加载 less 文件
+                // "libraryDirectory": "lib", // es es6 lib es5
+                // "style": "css" // `style: true` 会加载 less 文件
             }
         ]
     ]
