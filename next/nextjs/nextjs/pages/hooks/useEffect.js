@@ -1,4 +1,4 @@
-import React, {useReducer, useState, useEffect } from 'react';
+import React, {useReducer, useState, useEffect, useLayoutEffect, useContext, useRef } from 'react';
 const countReducer = (state, action) => {
     switch (action.type) {
         case 'add':
@@ -14,10 +14,10 @@ const HooksUseEffect = () => {
     const [name, setName] = useState('kings');
     useEffect(() => {
         console.log('useEffect')
-        return () => console.log('222222')
+        return () => console.log('useEffect calback')
     }, [count])
     return (
-        <div>
+        <div> 
             <input value={name} onChange={(e) => {
                 setName(e.target.value)
             }} />

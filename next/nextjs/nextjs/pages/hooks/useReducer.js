@@ -9,12 +9,12 @@ const countReducer = (state, action) => {
            return state;
     }
 }
-const HooksR = () => {
+const MyCountFunc = () => {
     const [count, dispatchCount] = useReducer(countReducer, 0)
     useEffect(() => {
         const interval = setInterval(() => {
             dispatchCount({type: 'minus'});
-        }, 1000)
+        }, 1000) 
         return () => clearInterval(interval)
     }, [])
     return (
@@ -23,4 +23,4 @@ const HooksR = () => {
         </div>
     )
 }
-export default HooksR;
+export default MyCountFunc;
