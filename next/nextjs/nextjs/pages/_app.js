@@ -7,7 +7,7 @@ import LayOut from '../component/Layout';
 class MyApp extends App {
     static async getInitialProps({ Component }) {
         let pageProps;
-        if (Component.getInitialProps) {
+        if (Component && Component.getInitialProps) {
             pageProps = await Component.getInitialProps();
         }
         return {
