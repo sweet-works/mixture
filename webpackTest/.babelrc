@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "es2015",
+            {
+                "loose": true
+            }
+        ],
+        "react",
+        "stage-0"
+        // "es2015"
+    ],
+    "plugins": [
+        "add-module-exports",
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        "react-hot-loader/babel",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": "css" // `style: true` 会加载 less 文件
+            }
+        ]
+    ]
+}
