@@ -9,10 +9,6 @@ class App extends Component {
     this.state = {
     }
   }
-  componentDidMount() {
-    console.log(this.props)
-    this.props.setTodo({ age: 0 })
-  }
   // 加减年龄
   computed = (type) => {
     let { setTodo } = this.props;
