@@ -17,7 +17,7 @@
   "dependencies": {
     "antd": "^4.5.3",
     "antd-mobile": "^2.3.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "koa": "^2.13.0",
     "koa-router": "^9.1.0",
     "koa2": "^2.0.0-alpha.7",
